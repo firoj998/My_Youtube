@@ -33,6 +33,23 @@ function Head() {
     };
   }, [searchQuery]);
 
+  /**
+   * key - i
+   * - render the component
+   * - useEffect();
+   * - start timer => make api call after 200 ms
+   * 
+   * key - ip
+   * - destroy the component (useEffect return method)
+   * - render the component
+   * - useEffect();
+   * - start timer => make api call after 200 ms
+   *  
+   */
+
+
+
+
   const getSearchSugsestions = async () => {
     const data = await fetch(YOUTUBE_SEARCH_API + searchQuery);
     const json = await data.json();
